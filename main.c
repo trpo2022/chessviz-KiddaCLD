@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <iostream>
 
+using namespace std;
 char board[8][8];
 
 void fill_board()
@@ -32,8 +34,7 @@ void fill_board()
 	}
 }
 
-void print_board()
-{
+void print_board(){
 	for (int y = 0; y < 8; y++)
 	{
 		printf("%d|", 8 - y);
@@ -48,10 +49,21 @@ void print_board()
 	printf("\n");
 }
 
-int main(void)
+
+string k[8] = {"e2","e4","e7","e5","Qf2","Qf6","a1","a3"};
+
+
+
+
+int main()
 {
-	 
+	
+	for (int i=0; i<8; i++){
+		cout << k[i] << endl;	
+	}	
+	
 	fill_board();
 	print_board();
-		
+return 0;
+			
 }
