@@ -1,2 +1,3 @@
-#!/bin/bush
-gcc -o -Wall -Werror main main.c
+main: main.c 
+	g++ -o main -Wall -Werror main.c
+
