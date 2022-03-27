@@ -1,12 +1,16 @@
-#include <stdio.h>
 #include <iostream>
-
+#include <string>
+#include <cstring>
+#include <stdio.h>
 using namespace std;
+
 char board[8][8];
+char black[8],white[8];
+int xt=0,yt=0,x=0,y=0,x2=0,y2=0;
+char t_temp;
 
 void fill_board()
 {
-	char black[8],white[8];
 	black[0]='R'; white[0]='r';
 	black[1]='N'; white[1]='n';
 	black[2]='B'; white[2]='b';
@@ -25,19 +29,24 @@ void fill_board()
 				board[y][x] = white[x]; 
 				board[y + 1][x] = 'p';
 			}
+			else if(y > 1 && y < 6){
+				board[y][x] = ' ';
+			}
 			if (y == 6){
 				board[y][x] = 'P';
-				board[y+1][x] = black[x];
+				board[y + 1][x] = black[x];
 			}
+
 			
 		}
 	}
 }
 
-void print_board(){
+void print_board()
+{
 	for (int y = 0; y < 8; y++)
 	{
-		printf("%d|", 8 - y);
+		printf("%d|", y+1);
 		for (int x = 0; x < 8; x++)
 		{
 			printf(" %c",board[y][x]);
@@ -49,21 +58,9 @@ void print_board(){
 	printf("\n");
 }
 
-
-string k[8] = {"e2","e4","e7","e5","Qf2","Qf6","a1","a3"};
-
-
-
-
-int main()
-{
-	
-	for (int i=0; i<8; i++){
-		cout << k[i] << endl;	
-	}	
-	
+int main(){
 	fill_board();
 	print_board();
-return 0;
-			
+	
+return 0;	
 }
