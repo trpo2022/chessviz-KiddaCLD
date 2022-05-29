@@ -1,6 +1,8 @@
 #include "../lib/lib.h"
 
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
@@ -17,12 +19,4 @@ int main()
     int MoveNumber = 1;
     int j = 1;
     conclusion(board);
-    while (j == 1) {
-        printf("%d.", MoveNumber);
-        WhiteTurn(board);
-        conclusion(board);
-        BlackTurn(board);
-        conclusion(board);
-        MoveNumber += 1;
-    }
 }
