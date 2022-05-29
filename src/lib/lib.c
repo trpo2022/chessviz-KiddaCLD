@@ -1,25 +1,24 @@
 #include <lib/lib.h>
 
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-
 void conclusion(char board[10][10])
 {
-    cout <<"\n";
+    cout << "\n";
     int x = 0, y = 0;
     for (y = 0; y < 9; y++) {
         for (x = 0; x < 9; x++) {
-            cout << board[y][x]<<" ";
+            cout << board[y][x] << " ";
             if (x == 0) {
-                cout <<" ";
+                cout << " ";
             }
         }
-        cout <<"\n";
+        cout << "\n";
         if (y == 7) {
-            cout <<"\n";
+            cout << "\n";
         }
     }
 }
@@ -535,7 +534,7 @@ void WhiteTurn(char board[10][10])
             }
             break;
         default:
-            cout <<"Ошибка: попробуйте сходить по другому\n";
+            cout << "Ошибка: попробуйте сходить по другому\n";
             flag = 1;
         }
     }
@@ -595,7 +594,7 @@ void BlackTurn(char board[10][10])
             }
             break;
         default:
-            cout <<"Ошибка: попробуйте сходить по другому\n";
+            cout << "Ошибка: попробуйте сходить по другому\n";
             flag = 1;
         }
     }

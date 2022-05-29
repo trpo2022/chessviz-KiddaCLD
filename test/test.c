@@ -1,6 +1,6 @@
+#include <cstdlib>
 #include <ctest.h>
 #include <lib/lib.h>
-#include <cstdlib>
 
 char board[10][10]
         = {"8rnbqkbnr",
