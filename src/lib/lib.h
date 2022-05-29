@@ -1,6 +1,3 @@
-#ifndef GAME_H_
-#define GAME_H_
+#pragma once
 
-void play();
-
-#endif // GAME_H_
+void conclusion(char board[9][9]);
