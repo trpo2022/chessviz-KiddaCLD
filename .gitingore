@@ -1,0 +1,9 @@
+obj/test/*.d
+obj/test/*.o
+obj/test/*.a
+obj/test/*.o
+
+obj/main/*.d
+obj/main/*.o
+obj/main/*.a
+obj/main/*.o
